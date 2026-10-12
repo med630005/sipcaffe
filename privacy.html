@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy & Cookie Policy · Sip Caffe Bar</title>
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@1,500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="page">
+
+  <header class="nav is-solid" id="nav">
+    <a href="index.html" class="nav__brand" aria-label="Sip Caffe Bar home">
+      <img src="assets/logo.svg" alt="" width="40" height="40" />
+      <span>.SIP CAFFE BAR.</span>
+    </a>
+    <div class="nav__actions">
+      <div class="lang" role="group" aria-label="Language">
+        <button type="button" data-lang="en" class="is-active">EN</button>
+        <button type="button" data-lang="mk">MK</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="legal">
+    <a href="index.html" class="link" data-i18n="footer.back">← Back to home</a>
+    <h1 class="section__title" data-i18n="privacy.title">Privacy &amp; Cookie Policy</h1>
+    <p class="legal__updated" data-i18n="privacy.updated">Last updated: 1 October 2026</p>
+
+    <h2 data-i18n="privacy.h1">Who we are</h2>
+    <p data-i18n="privacy.p1"></p>
+
+    <h2 data-i18n="privacy.h2">What data we collect</h2>
+    <p data-i18n="privacy.p2"></p>
+
+    <h2 data-i18n="privacy.h3">How long we keep it</h2>
+    <p data-i18n="privacy.p3"></p>
+
+    <h2 data-i18n="privacy.h4">Cookies</h2>
+    <p data-i18n="privacy.p4"></p>
+    <ul>
+      <li data-i18n-html="privacy.c1"></li>
+      <li data-i18n-html="privacy.c2"></li>
+      <li data-i18n-html="privacy.c3"></li>
+    </ul>
+    <p data-i18n="privacy.p5"></p>
+    <button type="button" class="btn btn--orange" data-open-cookies data-i18n="footer.cookies">Cookie settings</button>
+
+    <h2 data-i18n="privacy.h6">Your rights</h2>
+    <p data-i18n="privacy.p6"></p>
+  </main>
+
+  <footer class="footer footer--slim">
+    <div class="footer__row">
+      <p>© <span id="year"></span> Sip Caffe Bar · <span data-i18n="footer.rights">All rights reserved.</span></p>
+      <a href="index.html" data-i18n="footer.back">← Back to home</a>
+    </div>
+  </footer>
+
+  <!-- cookies (same markup as the home page) -->
+  <div class="cookie-bar" id="cookieBar" hidden>
+    <div class="cookie-bar__text">
+      <strong data-i18n="cookies.title">We use cookies 🍪</strong>
+      <p data-i18n-html="cookies.text"></p>
+    </div>
+    <div class="cookie-bar__actions">
+      <button type="button" class="btn btn--ghost-dark btn--sm" data-open-cookies data-i18n="cookies.settings">Settings</button>
+      <button type="button" class="btn btn--ghost-dark btn--sm" id="cookieReject" data-i18n="cookies.reject">Reject</button>
+      <button type="button" class="btn btn--orange btn--sm" id="cookieAccept" data-i18n="cookies.accept">Accept all</button>
+    </div>
+  </div>
+
+  <div class="modal" id="cookieModal" hidden>
+    <div class="modal__backdrop" data-close></div>
+    <div class="modal__box modal__box--small" role="dialog" aria-modal="true" aria-labelledby="cookieTitle">
+      <button class="modal__close" data-close aria-label="Close">×</button>
+      <div class="modal__content">
+        <h3 id="cookieTitle" data-i18n="cookies.modalTitle">Cookie settings</h3>
+        <div class="toggle-row">
+          <div><strong data-i18n="cookies.necessary">Necessary</strong><p data-i18n="cookies.necessaryText"></p></div>
+          <input type="checkbox" checked disabled aria-label="Necessary cookies" />
+        </div>
+        <div class="toggle-row">
+          <div><strong data-i18n="cookies.analytics">Analytics</strong><p data-i18n="cookies.analyticsText"></p></div>
+          <input type="checkbox" id="ckAnalytics" aria-label="Analytics cookies" />
+        </div>
+        <div class="toggle-row">
+          <div><strong data-i18n="cookies.thirdParty">Third-party</strong><p data-i18n="cookies.thirdPartyText"></p></div>
+          <input type="checkbox" id="ckThird" aria-label="Third-party cookies" />
+        </div>
+        <button type="button" class="btn btn--orange" id="cookieSave" data-i18n="cookies.save">Save preferences</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/common.js"></script>
+  <script>applyLang();</script>
+</body>
+</html>

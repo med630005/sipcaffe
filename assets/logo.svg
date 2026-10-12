@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <path id="c" d="M100,100 m-62,0 a62,62 0 1,1 124,0 a62,62 0 1,1 -124,0"/>
+  </defs>
+  <circle cx="100" cy="100" r="98" fill="#ffffff" stroke="#111" stroke-width="2"/>
+  <text font-family="Arial Black, Arial, sans-serif" font-weight="900" font-size="36" letter-spacing="6" fill="#111">
+    <textPath href="#c" startOffset="2%">SIP CAFFE BAR</textPath>
+  </text>
+</svg>

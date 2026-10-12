@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sip Caffe Bar · Coffee & Spirits · Hipodrom, Skopje</title>
+  <meta name="description" content="Sip Caffe Bar — specialty coffee by day, cocktails and wine by night. Hipodrom, Skopje." />
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@1,500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="nav">
+    <a href="#top" class="nav__brand" aria-label="Sip Caffe Bar home">
+      <img src="assets/logo.svg" alt="" width="40" height="40" />
+      <span>.SIP CAFFE BAR.</span>
+    </a>
+    <nav class="nav__links" id="navLinks">
+      <a href="#about" data-i18n="nav.about">About</a>
+      <a href="#services" data-i18n="nav.services">Services</a>
+      <a href="#menu" data-i18n="nav.menu">Menu</a>
+      <a href="#team" data-i18n="nav.team">Team</a>
+      <a href="#news" data-i18n="nav.news">News</a>
+      <a href="#contact" data-i18n="nav.contact">Contact</a>
+    </nav>
+    <div class="nav__actions">
+      <div class="lang" role="group" aria-label="Language">
+        <button type="button" data-lang="en" class="is-active">EN</button>
+        <button type="button" data-lang="mk">MK</button>
+      </div>
+      <a href="#contact" class="btn btn--orange btn--sm nav__cta" data-i18n="nav.book">Book a table</a>
+      <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="hero__bg" style="background-image:url('https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=2000&q=80')"></div>
+      <div class="hero__overlay"></div>
+
+      <div class="hero__content">
+        <div class="hero__meta">
+          <p class="eyebrow" data-i18n="hero.eyebrow">Hipodrom · Skopje</p>
+          <span class="status" id="openStatus"></span>
+        </div>
+        <h1 class="hero__title">
+          <span>.SIP</span>
+          <span>CAFFE</span>
+          <span>BAR.</span>
+        </h1>
+        <p class="hero__tag">
+          <span data-i18n="hero.t1">Coffee &amp; Spirits</span><i>▫</i><span data-i18n="hero.t2">Wine</span><i>▫</i><span data-i18n="hero.t3">Cocktails</span>
+        </p>
+        <div class="hero__cta">
+          <a href="#menu" class="btn btn--light" data-i18n="hero.cta1">See the menu</a>
+          <a href="#contact" class="btn btn--ghost" data-i18n="hero.cta2">Book a table</a>
+        </div>
+      </div>
+
+      <div class="hero__badge" aria-hidden="true">
+        <svg viewBox="0 0 200 200">
+          <defs><path id="circle" d="M100,100 m-72,0 a72,72 0 1,1 144,0 a72,72 0 1,1 -144,0" /></defs>
+          <circle cx="100" cy="100" r="98" fill="#f4ede1" />
+          <text><textPath href="#circle" startOffset="0">SIP · CAFFE · BAR · SIP · CAFFE · BAR ·</textPath></text>
+        </svg>
+        <span class="hero__badge-cup">☕</span>
+      </div>
+
+      <a href="#about" class="hero__scroll" aria-label="Scroll down"><span></span></a>
+    </section>
+
+    <!-- ============ MARQUEE ============ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Espresso</span><b>✦</b><span>Matcha Vanilla</span><b>✦</b><span>Espresso Tonic</span><b>✦</b><span>Spritz</span><b>✦</b><span>Vranec</span><b>✦</b><span>Flat White</span><b>✦</b><span>Strawberry Mojito</span><b>✦</b>
+        <span>Espresso</span><b>✦</b><span>Matcha Vanilla</span><b>✦</b><span>Espresso Tonic</span><b>✦</b><span>Spritz</span><b>✦</b><span>Vranec</span><b>✦</b><span>Flat White</span><b>✦</b><span>Strawberry Mojito</span><b>✦</b>
+      </div>
+    </div>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="about section" id="about">
+      <div class="about__text reveal">
+        <p class="eyebrow eyebrow--accent" data-i18n="about.eyebrow">Our story</p>
+        <h2 class="section__title" data-i18n-html="about.title">From the first <em>sip</em> of morning to the last toast of the night.</h2>
+        <p data-i18n="about.p1">Sip Caffe Bar is a neighbourhood spot in Hipodrom where carefully pulled espresso, creamy matcha and slow mornings on the sofa meet evening spritzes, house cocktails and a good glass of wine.</p>
+        <p data-i18n="about.p2">Warm wood, soft light and a terrace that comes alive after sunset — come for a coffee, stay for a drink.</p>
+
+        <div class="about__stats">
+          <div><strong>07<sup>:30</sup></strong><span data-i18n="about.s1">first espresso</span></div>
+          <div><strong>60+</strong><span data-i18n="about.s2">seats inside &amp; out</span></div>
+          <div><strong>∞</strong><span data-i18n="about.s3">good company</span></div>
+        </div>
+      </div>
+
+      <div class="about__images reveal">
+        <figure class="img img--tall">
+          <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=900&q=80" alt="Latte art in a ceramic cup" loading="lazy" />
+        </figure>
+        <figure class="img img--short">
+          <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&w=900&q=80" alt="Cocktail on the bar" loading="lazy" />
+        </figure>
+        <div class="about__stamp">
+          <img src="assets/logo.svg" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SERVICES ============ -->
+    <section class="services section" id="services">
+      <div class="section__head reveal">
+        <p class="eyebrow eyebrow--accent" data-i18n="services.eyebrow">What we offer</p>
+        <h2 class="section__title" data-i18n="services.title">Services</h2>
+        <p class="section__intro" data-i18n="services.intro">More than a coffee stop — here's everything you can do at Sip.</p>
+      </div>
+      <div class="services__grid" id="servicesGrid"></div>
+    </section>
+
+    <!-- ============ DAY / NIGHT ============ -->
+    <section class="daynight">
+      <article class="dn dn--day reveal">
+        <div class="dn__img" style="background-image:url('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1400&q=80')"></div>
+        <div class="dn__body">
+          <span class="dn__time">☀ 07:30 — 17:00</span>
+          <h3 data-i18n="dn.dayTitle">Caffe by day</h3>
+          <p data-i18n="dn.dayText">Espresso, cappuccino, iced lattes and our matcha line-up. Bring a book, a laptop or a friend.</p>
+        </div>
+      </article>
+      <article class="dn dn--night reveal">
+        <div class="dn__img" style="background-image:url('https://images.unsplash.com/photo-1470337458703-46ad1756a187?auto=format&fit=crop&w=1400&q=80')"></div>
+        <div class="dn__body">
+          <span class="dn__time">☾ 17:00 — <span data-i18n="dn.late">late</span></span>
+          <h3 data-i18n="dn.nightTitle">Bar by night</h3>
+          <p data-i18n="dn.nightText">Spritzes, signature cocktails, wine by the glass and a charcuterie board on the terrace.</p>
+        </div>
+      </article>
+    </section>
+
+    <!-- ============ MENU ============ -->
+    <section class="menu section" id="menu">
+      <div class="section__head section__head--center reveal">
+        <p class="eyebrow eyebrow--accent" data-i18n="menu.eyebrow">What we pour</p>
+        <h2 class="section__title" data-i18n="menu.title">The Menu</h2>
+      </div>
+      <div class="tabs reveal" role="tablist" id="menuTabs"></div>
+      <div class="menu__panels" id="menuPanels"></div>
+      <p class="menu__note" data-i18n="menu.note">Prices in MKD (ден). Plant-based milk available on request. Ask our staff about today's specials.</p>
+    </section>
+
+    <!-- ============ TEAM ============ -->
+    <section class="team section" id="team">
+      <div class="section__head reveal">
+        <p class="eyebrow eyebrow--accent" data-i18n="team.eyebrow">The people behind the bar</p>
+        <h2 class="section__title" data-i18n="team.title">Our Team</h2>
+        <p class="section__intro" data-i18n="team.intro">Small team, big hospitality. These are the faces making your coffee and shaking your cocktails.</p>
+      </div>
+      <div class="team__grid" id="teamGrid"></div>
+    </section>
+
+    <!-- ============ NEWS / BLOG ============ -->
+    <section class="news section" id="news">
+      <div class="section__head reveal">
+        <p class="eyebrow eyebrow--accent" data-i18n="news.eyebrow">Fresh from the bar</p>
+        <h2 class="section__title" data-i18n="news.title">News &amp; Blog</h2>
+      </div>
+      <div class="news__grid" id="newsGrid"></div>
+    </section>
+
+    <!-- ============ GALLERY ============ -->
+    <section class="gallery section" id="gallery">
+      <div class="gallery__head reveal">
+        <div>
+          <p class="eyebrow eyebrow--accent">@sipcaffebar</p>
+          <h2 class="section__title" data-i18n="gallery.title">Moments at Sip</h2>
+        </div>
+        <a class="btn btn--dark" href="https://www.instagram.com/sipcaffebar/" target="_blank" rel="noopener" data-i18n="gallery.cta">Follow on Instagram</a>
+      </div>
+
+      <div class="grid">
+        <a class="grid__item grid__item--big reveal" href="https://www.instagram.com/sipcaffebar/" target="_blank" rel="noopener">
+          <img src="https://images.unsplash.com/photo-1453614512568-c4024d13c247?auto=format&fit=crop&w=1200&q=80" alt="Café interior" loading="lazy" />
+        </a>
+        <a class="grid__item reveal" href="https://www.instagram.com/sipcaffebar/" target="_blank" rel="noopener">
+          <img src="https://images.unsplash.com/photo-1515823064-d6e0c04616a7?auto=format&fit=crop&w=800&q=80" alt="Iced matcha latte" loading="lazy" />
+        </a>
+        <a class="grid__item reveal" href="https://www.instagram.com/sipcaffebar/" target="_blank" rel="noopener">
+          <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=800&q=80" alt="Red wine being poured" loading="lazy" />
+        </a>
+        <a class="grid__item reveal" href="https://www.instagram.com/sipcaffebar/" target="_blank" rel="noopener">
+          <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=800&q=80" alt="Iced coffee" loading="lazy" />
+        </a>
+        <a class="grid__item reveal" href="https://www.instagram.com/sipcaffebar/" target="_blank" rel="noopener">
+          <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=800&q=80" alt="Colourful cocktails" loading="lazy" />
+        </a>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="faq section" id="faq">
+      <div class="section__head section__head--center reveal">
+        <p class="eyebrow eyebrow--accent" data-i18n="faq.eyebrow">Good to know</p>
+        <h2 class="section__title" data-i18n="faq.title">FAQ</h2>
+      </div>
+      <div class="faq__list reveal" id="faqList"></div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="contact section" id="contact">
+      <div class="section__head reveal">
+        <p class="eyebrow eyebrow--accent" data-i18n="contact.eyebrow">Come by or drop us a line</p>
+        <h2 class="section__title" data-i18n="contact.title">Contact &amp; Reservations</h2>
+      </div>
+
+      <div class="contact__wrap">
+        <!-- info -->
+        <div class="contact__info reveal">
+          <div class="info-block">
+            <h4 data-i18n="contact.where">Where</h4>
+            <p data-i18n="contact.address">Hipodrom, Skopje, North Macedonia</p>
+            <a class="link" href="https://maps.app.goo.gl/HpbFe4a7zrEfoqGY7" target="_blank" rel="noopener" data-i18n="contact.directions">Get directions →</a>
+          </div>
+
+          <div class="info-block">
+            <h4 data-i18n="contact.hours">Opening hours</h4>
+            <ul class="hours">
+              <li><span data-i18n="contact.weekdays">Mon — Fri</span><span>07:30 — 00:00</span></li>
+              <li><span data-i18n="contact.sat">Saturday</span><span>08:00 — 01:00</span></li>
+              <li><span data-i18n="contact.sun">Sunday</span><span>09:00 — 00:00</span></li>
+            </ul>
+          </div>
+
+          <div class="info-block">
+            <h4 data-i18n="contact.reach">Reach us</h4>
+            <p><a href="tel:+38970000000">+389 70 000 000</a></p>
+            <p><a href="mailto:hello@sipcaffebar.mk">hello@sipcaffebar.mk</a></p>
+            <p><a href="https://www.instagram.com/sipcaffebar/" target="_blank" rel="noopener">Instagram · @sipcaffebar</a></p>
+          </div>
+
+          <div class="map" id="map">
+            <div class="map__placeholder" id="mapPlaceholder">
+              <p data-i18n="contact.mapText">The map is provided by Google and may set third-party cookies.</p>
+              <button type="button" class="btn btn--dark btn--sm" id="loadMap" data-i18n="contact.mapBtn">Load map</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- form -->
+        <form class="form reveal" id="contactForm" novalidate>
+          <div class="form__row">
+            <label class="field">
+              <span data-i18n="form.name">Full name</span>
+              <input type="text" name="name" autocomplete="name" required />
+              <small class="field__err"></small>
+            </label>
+            <label class="field">
+              <span data-i18n="form.email">Email</span>
+              <input type="email" name="email" autocomplete="email" required />
+              <small class="field__err"></small>
+            </label>
+          </div>
+
+          <div class="form__row">
+            <label class="field">
+              <span><span data-i18n="form.phone">Phone</span> <em data-i18n="form.optional">(optional)</em></span>
+              <input type="tel" name="phone" autocomplete="tel" />
+              <small class="field__err"></small>
+            </label>
+            <label class="field">
+              <span data-i18n="form.reason">I'm writing about</span>
+              <select name="reason" id="reason">
+                <option value="reservation" data-i18n="form.r1">Table reservation</option>
+                <option value="event" data-i18n="form.r2">Private event / celebration</option>
+                <option value="voucher" data-i18n="form.r3">Gift voucher</option>
+                <option value="general" data-i18n="form.r4">General question</option>
+              </select>
+            </label>
+          </div>
+
+          <div class="form__row" id="bookingFields">
+            <label class="field">
+              <span data-i18n="form.date">Date</span>
+              <input type="date" name="date" />
+              <small class="field__err"></small>
+            </label>
+            <label class="field">
+              <span data-i18n="form.time">Time</span>
+              <input type="time" name="time" />
+              <small class="field__err"></small>
+            </label>
+            <label class="field">
+              <span data-i18n="form.guests">Guests</span>
+              <input type="number" name="guests" min="1" max="60" value="2" />
+              <small class="field__err"></small>
+            </label>
+          </div>
+
+          <label class="field">
+            <span data-i18n="form.message">Message</span>
+            <textarea name="message" rows="5" required></textarea>
+            <small class="field__err"></small>
+          </label>
+
+          <label class="check">
+            <input type="checkbox" name="consent" required />
+            <span data-i18n-html="form.consent">I agree that Sip Caffe Bar may process my data to answer this request, as described in the <a href="privacy.html">privacy policy</a>.</span>
+          </label>
+          <small class="field__err" id="consentErr"></small>
+
+          <button type="submit" class="btn btn--orange" data-i18n="form.submit">Send message</button>
+          <p class="form__success" id="formSuccess" role="status" hidden></p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="footer__big">.SIP CAFFE BAR.</div>
+    <div class="footer__cols">
+      <div>
+        <img src="assets/logo.svg" alt="Sip Caffe Bar" width="64" height="64" />
+        <p data-i18n="footer.about">Coffee &amp; Spirits ▫ Wine ▫ Cocktails. A neighbourhood café-bar in Hipodrom, Skopje.</p>
+      </div>
+      <div>
+        <h5 data-i18n="footer.explore">Explore</h5>
+        <a href="#about" data-i18n="nav.about">About</a>
+        <a href="#services" data-i18n="nav.services">Services</a>
+        <a href="#menu" data-i18n="nav.menu">Menu</a>
+        <a href="#team" data-i18n="nav.team">Team</a>
+        <a href="#news" data-i18n="nav.news">News</a>
+        <a href="#faq">FAQ</a>
+      </div>
+      <div>
+        <h5 data-i18n="footer.visit">Visit</h5>
+        <p data-i18n="contact.address">Hipodrom, Skopje, North Macedonia</p>
+        <a href="tel:+38970000000">+389 70 000 000</a>
+        <a href="mailto:hello@sipcaffebar.mk">hello@sipcaffebar.mk</a>
+      </div>
+      <div>
+        <h5 data-i18n="footer.legal">Legal</h5>
+        <a href="privacy.html" data-i18n="footer.privacy">Privacy &amp; cookie policy</a>
+        <button type="button" class="linklike" data-open-cookies data-i18n="footer.cookies">Cookie settings</button>
+      </div>
+    </div>
+    <div class="footer__row">
+      <p>© <span id="year"></span> Sip Caffe Bar · <span data-i18n="footer.rights">All rights reserved.</span></p>
+      <a href="https://www.instagram.com/sipcaffebar/" target="_blank" rel="noopener" aria-label="Instagram">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+      </a>
+    </div>
+  </footer>
+
+  <!-- ============ ARTICLE MODAL ============ -->
+  <div class="modal" id="articleModal" hidden>
+    <div class="modal__backdrop" data-close></div>
+    <article class="modal__box modal__box--article" role="dialog" aria-modal="true" aria-labelledby="articleTitle">
+      <button class="modal__close" data-close aria-label="Close">×</button>
+      <img id="articleImg" alt="" />
+      <div class="modal__content">
+        <p class="eyebrow eyebrow--accent" id="articleMeta"></p>
+        <h3 id="articleTitle"></h3>
+        <div id="articleBody"></div>
+      </div>
+    </article>
+  </div>
+
+  <!-- ============ COOKIES ============ -->
+  <div class="cookie-bar" id="cookieBar" hidden>
+    <div class="cookie-bar__text">
+      <strong data-i18n="cookies.title">We use cookies 🍪</strong>
+      <p data-i18n-html="cookies.text">We use necessary cookies to make the site work, and — only with your consent — analytics and third-party cookies (e.g. Google Maps). Read our <a href="privacy.html">cookie policy</a>.</p>
+    </div>
+    <div class="cookie-bar__actions">
+      <button type="button" class="btn btn--ghost-dark btn--sm" data-open-cookies data-i18n="cookies.settings">Settings</button>
+      <button type="button" class="btn btn--ghost-dark btn--sm" id="cookieReject" data-i18n="cookies.reject">Reject</button>
+      <button type="button" class="btn btn--orange btn--sm" id="cookieAccept" data-i18n="cookies.accept">Accept all</button>
+    </div>
+  </div>
+
+  <div class="modal" id="cookieModal" hidden>
+    <div class="modal__backdrop" data-close></div>
+    <div class="modal__box modal__box--small" role="dialog" aria-modal="true" aria-labelledby="cookieTitle">
+      <button class="modal__close" data-close aria-label="Close">×</button>
+      <div class="modal__content">
+        <h3 id="cookieTitle" data-i18n="cookies.modalTitle">Cookie settings</h3>
+        <div class="toggle-row">
+          <div><strong data-i18n="cookies.necessary">Necessary</strong><p data-i18n="cookies.necessaryText">Remember your language and cookie choices. Always on.</p></div>
+          <input type="checkbox" checked disabled aria-label="Necessary cookies" />
+        </div>
+        <div class="toggle-row">
+          <div><strong data-i18n="cookies.analytics">Analytics</strong><p data-i18n="cookies.analyticsText">Help us understand which pages are visited, anonymously.</p></div>
+          <input type="checkbox" id="ckAnalytics" aria-label="Analytics cookies" />
+        </div>
+        <div class="toggle-row">
+          <div><strong data-i18n="cookies.thirdParty">Third-party</strong><p data-i18n="cookies.thirdPartyText">Embedded content such as Google Maps and Instagram.</p></div>
+          <input type="checkbox" id="ckThird" aria-label="Third-party cookies" />
+        </div>
+        <button type="button" class="btn btn--orange" id="cookieSave" data-i18n="cookies.save">Save preferences</button>
+      </div>
+    </div>
+  </div>
+
+  <a href="#top" class="to-top" id="toTop" aria-label="Back to top">↑</a>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
